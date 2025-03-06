@@ -1,11 +1,11 @@
 body {
     margin: 0;
     height: 100vh;
-    background-color:hotpink;
+    background-color:antiquewhite;
 }
 
 span{
-    background: url("https://cdn1.iconfinder.com/data/icons/unicons-line-vol-4/24/heart-alt-1024.png");
+    background: url("https://cdn4.iconfinder.com/data/icons/small-n-flat/24/heart-1024.png");
     width: 90px;
     height: 90px;
     position: absolute;
@@ -21,9 +21,11 @@ span{
     0% {
         transform: translate(-50%, -50%);
         opacity: 1;
+        filter: hue-rotate(0);
     }
     100% {
         transform: translate(-50, -500%);
         opacity: 0;
+        filter: hue-rotate(720deg);
     }
 }
