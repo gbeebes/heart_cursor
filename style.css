@@ -1,16 +1,29 @@
 body {
     margin: 0;
     height: 100vh;
-    background-color:lightpink;
+    background-color:hotpink;
 }
 
 span{
-    background: url("https://cdn4.iconfinder.com/data/icons/twitter-29/512/166_Heart_Love_Like_Twitter-1024.png");
-    width: 100px;
-    height: 100px;
+    background: url("https://cdn1.iconfinder.com/data/icons/unicons-line-vol-4/24/heart-alt-1024.png");
+    width: 90px;
+    height: 90px;
     position: absolute;
+    pointer-events: none;
     background-size: cover;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    animation: animate 6s linear;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50, -500%);
+        opacity: 0;
+    }
 }
